@@ -1,0 +1,8 @@
+<h3>Pokemons</h3>
+<ul>
+  <li *ngFor="let pokemon of pokemons$ | async">
+    <p>{{ pokemon.name }} {{ pokemon.url }}</p>
+  </li>
+</ul>
+
+<button (click)="retrivePokemonsClicked()">Retrive Pokemons</button>
